@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" native-lib",
+      "abi": "x86",
+      "output": "G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

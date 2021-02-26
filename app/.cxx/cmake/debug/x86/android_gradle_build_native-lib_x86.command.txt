@@ -1,0 +1,7 @@
+Executable : C:\Users\dzb\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+G:\AndroidStudioProjects\SafeQR1106\SafeQR\app\.cxx\cmake\debug\x86
+native-lib
+jvmArgs : 
+

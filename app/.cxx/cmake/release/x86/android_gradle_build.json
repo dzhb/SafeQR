@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "G:/AndroidStudioProjects/SafeQR1106/SafeQR/app/.cxx/cmake/release/x86",
+    "1": "--target=i686-none-linux-android21 --gcc-toolchain=C:/Users/dzb/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/dzb/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\platforms.cmake",
+    "G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86": {
+      "buildCommand": "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\.cxx\\cmake\\release\\x86\" native-lib",
+      "buildType": "release",
+      "toolchain": "1672291045",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\src\\main\\cpp\\native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "G:\\AndroidStudioProjects\\SafeQR1106\\SafeQR\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "1672291045": {
+      "cppCompilerExecutable": "C:\\Users\\dzb\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
