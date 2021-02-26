@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="@string/makeSafeQrActivity_text1"
+                android:textColor="@color/textColor_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="@string/makeSafeQrActivity_text2"
+                android:textColor="@color/textColor_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="@string/makeSafeQrActivity_text3"
+                android:textColor="@color/textColor_white" />
+
+            <LinearLayout
+                android:id="@+id/make_makeSafeQr2_LinearLayout_chooseMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_rectangle2_normal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/make_makeSafeQr2_chooseMethod_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/makeSafeQrActivity_text4"
+                    android:textColor="#3883FE"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/make_makeSafeQr2_makeSafeQrWithQrImage"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_yes"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/make_makeSafeQr2_chooseImageButton"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/round_rectangle5_blue"
+                            android:text="从相册选择"
+                            android:textColor="@color/textColor_white"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/make_makeSafeQr2_chooseMethod_right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/make_makeSafeQr2_makeSafeQrWithoutQrImage"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/icon_no"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/make_makeSafeQr2_beganMakeButton"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/round_rectangle5_bluestroke"
+                            android:text="开始制作"
+                            android:textColor="@color/textColor_blue"
+                            android:textSize="10dp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/make_makeSafeQr2_Linearlayout_makeWithString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_rectangle2_normal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.dzhb.safeqr.widget.TextAndLine
+                        android:id="@+id/make_makeSafeQr2_TextAndLine_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <com.dzhb.safeqr.widget.TextAndLine
+                        android:id="@+id/make_makeSafeQr2_TextAndLine_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <com.dzhb.safeqr.widget.TextAndLine
+                        android:id="@+id/make_makeSafeQr2_TextAndLine_file"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <com.dzhb.safeqr.widget.TextAndLine
+                        android:id="@+id/make_makeSafeQr2_TextAndLine_image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <com.dzhb.safeqr.widget.TextAndLine
+                        android:id="@+id/make_makeSafeQr2_TextAndLine_audio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:background="@drawable/round_rectangle4_graystroke"
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_EditTextScrollView_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <EditText
+                            android:id="@+id/make_makeSafeQr2_EditText_text"
+                            android:hint="请输入文本信息"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            />
+
+                    </ScrollView>
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_EditText_website"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:text="http://"
+                        android:background="@drawable/round_rectangle4_graystroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_file"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/makeSafeQrActivvity_text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_file2"
+                        android:layout_below="@+id/make_makeSafeQr2_TextView_file"
+                        android:gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:text="@string/makeSafeQrActivvity_text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_image"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/makeSafeQrActivvity_text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_image2"
+                        android:gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:layout_below="@id/make_makeSafeQr2_TextView_image"
+                        android:text="@string/makeSafeQrActivvity_text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_audio"
+                        android:gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/makeSafeQrActivvity_text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/make_makeSafeQr2_TextView_audio2"
+                        android:gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:layout_below="@id/make_makeSafeQr2_TextView_audio"
+                        android:text="@string/makeSafeQrActivvity_text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/make_makeSafeQr2_makeSafeQrButton"
+                    android:text="生成安全二维码"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/textColor_white"
+                    android:background="@drawable/round_rectangle5_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_rectangle2_normal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="50dp"
+                    android:background="@drawable/round_rectangle3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="此处生成二维码"
+                        android:textColor="#E0E0E0"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/make_makeSafeQr2_qrImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/make_makeSafeQr2_saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_rectangle4_gray"
+                    android:text="保存二维码"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+
+                <Button
+                    android:id="@+id/make_makeSafeQr2_remakeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/round_rectangle4_graystroke"
+                    android:text="制作下一张"
+                    android:textColor="#BEBEBE"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.dzhb.safeqr.widget.ImgBtn_horizontal
+                android:id="@+id/make_makeSafeQr2_IBH_checkSafeQR"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_selector"
+                android:clickable="true"
+                android:focusable="true"
+                app:image="@drawable/safe"
+                app:text="@string/homeActivity_checkQRButton"
+                app:textColor="@color/imageBtnH_textColor" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topBar_makeSafeQr2_makeSafeQR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleTextColor="#ffffff"
+        app:titleTextSize="6sp" />
+
+
+</RelativeLayout>

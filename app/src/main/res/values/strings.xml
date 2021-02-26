@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">二维码安全助手</string>
+    <string name="homeActivity_makeQRButton">安全二维码制作</string>
+    <string name="homeActivity_checkQRButton">安全二维码鉴别</string>
+    <string name="makeQRButton">安全二维码生成</string>
+    <string name="homeActivity_introduce1">欢迎使用二维码安全助手，</string>
+    <string name="homeActivity_introduce2">我们可以为您的二维码提升安全性或</string>
+    <string name="homeActivity_introduce3">检查您的二维是否存在安全隐患</string>
+    <string name="makeSafeQrActivity_text1">使用该功能制作安全二维码</string>
+    <string name="makeSafeQrActivity_text2">我们能为您上传的二维码或者输入的信息</string>
+    <string name="makeSafeQrActivity_text3">添加水印，生成安全的二维码</string>
+    <string name="makeSafeQrActivity_text4">您是否已有一张二维码？</string>
+    <string name="makeSafeQrActivvity_text5">该功能暂未开发，</string>
+    <string name="makeSafeQrActivvity_text6">敬请期待！</string>
+    <string name="makeSafeQrActivity2_makeSafeQrButton1">生成安全二维码</string>
+    <string name="makeSafeQrActivity2_makeSafeQrButton2">制作完成！</string>
+    <string name="checkSafeQrActivity_text1">使用该功能进行二维码扫描，</string>
+    <string name="checkSafeQrActivity_text2">我们将自动检测提取水印，并向用户返回二维码的</string>
+    <string name="checkSafeQrActivity_text3">安全性，若遇到安全隐患将进行防御</string>
+    <string name="showSafeActivity_text1">已检测出水印！</string>
+    <string name="showSafeActivity_text2">可安全访问！</string>
+    <string name="showDangeActivity_text1">该二维码未检测出水印或已被篡改！</string>
+    <string name="showDangeActivity_text2">可能存在未知隐患！不推荐访问！</string>
+
+
+
+</resources>

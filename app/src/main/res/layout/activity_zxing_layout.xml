@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scanBackground">
+
+
+
+
+    <!--<com.journeyapps.barcodescanner.DecoratedBarcodeView-->
+        <!--android:id="@+id/zxing_barcode_scanner"-->
+        <!--android:layout_width="190dp"-->
+        <!--android:layout_height="190dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:zxing_framing_rect_height="200dp"-->
+        <!--app:zxing_framing_rect_width="200dp"-->
+        <!--app:zxing_preview_scaling_strategy="centerCrop"-->
+        <!--app:zxing_scanner_layout="@layout/custom_barcode_scanner"-->
+        <!--app:zxing_use_texture_view="true" />-->
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:zxing_framing_rect_height="200dp"
+        app:zxing_framing_rect_width="200dp"
+        app:zxing_preview_scaling_strategy="centerCrop"
+        app:zxing_scanner_layout="@layout/custom_barcode_scanner"
+        app:zxing_use_texture_view="true" />
+
+    <!--光圈-->
+    <ImageView
+        android:layout_width="362dp"
+        android:layout_height="362dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/glow6" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/frame" />
+
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topbar_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleText="扫描二维码"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="6sp" />
+
+    <com.dzhb.safeqr.widget.ImgBtn_horizontal
+        android:id="@+id/scan_chooseImageButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="155dp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        app:image="@drawable/icon_img"
+        app:text="从相册选择"
+        app:textColor="@color/textColor_white"
+        app:textSize="5dp" />
+
+    <com.dzhb.safeqr.widget.ImgBtn_horizontal
+        android:id="@+id/scan_IBH_makeSafeQR"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        app:image="@drawable/safe"
+        app:text="@string/makeQRButton"
+        app:textColor="@color/imageBtnH_textColor" />
+
+
+</RelativeLayout>

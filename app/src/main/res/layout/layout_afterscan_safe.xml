@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_safe">
+
+    <!--光圈-->
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/glow3" />
+
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topBar_afterScan_safe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleTextColor="#ffffff"
+        app:titleTextSize="6sp" />
+
+
+    <TextView
+        android:id="@+id/afterScan_safe_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar_afterScan_safe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:text="@string/showSafeActivity_text1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/afterScan_safe_tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:text="@string/showSafeActivity_text2" />
+
+    <!--二维码图片-->
+    <ImageView
+        android:id="@+id/qrCodePic"
+        android:background="@drawable/qrimage_safe"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+android:layout_centerInParent="true"
+         />
+
+    <!--网格-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+android:layout_centerInParent="true"
+        android:background="@drawable/frame" />
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+android:layout_centerInParent="true"
+        android:layout_marginTop="137dp"
+        android:background="@drawable/ok" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qrCodePic"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/safe_btn_enter"
+            android:text="安全访问"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_green" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <com.dzhb.safeqr.widget.ImgBtn_horizontal
+            android:id="@+id/make_safeQR"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            app:text="@string/makeQRButton"
+            app:textColor="@color/imageBtnH_textColor"
+            app:image="@drawable/safe"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

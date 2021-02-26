@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topBar_checkSafeQr_check_album"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleTextColor="#ffffff"
+        app:titleTextSize="6sp" />
+
+    <ImageView
+        android:id="@+id/checkSafeQr_check_album_safeImageView"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+     <!--<Button-->
+    <!--android:id="@+id/checkSafeQr_check_album_chooseImageButton"-->
+    <!--android:text="选择图片"-->
+    <!--android:textSize="20dp"-->
+    <!--android:background="@drawable/button_selector"-->
+    <!--android:drawableLeft="@drawable/images"-->
+    <!--android:padding="10dp"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:layout_margin="30dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/checkSafeQr_check_album_checkQrButton"-->
+    <!--android:text="开始检测"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_margin="30dp"-->
+    <!--android:background="@drawable/button_selector"-->
+    <!--android:drawableLeft="@drawable/check"-->
+    <!--android:padding="10dp"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/checkSafeQr_check_album_waterMarkImageView"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp" />-->
+
+
+
+</LinearLayout>

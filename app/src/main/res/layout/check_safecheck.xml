@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topBar_safeCheck"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleTextColor="#ffffff"
+        app:titleTextSize="6sp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/checkSafeQrActivity_text1"
+        android:textColor="@color/textColor_white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/checkSafeQrActivity_text2"
+        android:textColor="@color/textColor_white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/makeSafeQrActivity_text3"
+        android:textColor="@color/textColor_white" />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <com.dzhb.safeqr.widget.ImgBtn_vertical
+        android:id="@+id/button_openCamera"
+        android:background="@drawable/button_selector2"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.dzhb.safeqr.widget.ImgBtn_vertical
+        android:id="@+id/button_openAlbum"
+        android:background="@drawable/button_selector2"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.dzhb.safeqr.widget.ImgBtn_horizontal
+        android:id="@+id/checkSafe_IBH_makeSafeQR"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        app:text="@string/makeQRButton"
+        app:textColor="@color/imageBtnH_textColor"
+        app:image="@drawable/safe"
+        />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+
+</LinearLayout>

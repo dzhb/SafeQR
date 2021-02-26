@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/scanBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<com.dzhb.safeqr.view.checkSafeQR.scan.CustomViewfinderView-->
+        <!--android:id="@+id/zxing_viewfinder_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--光圈-->
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/glow4" />
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/zxing_barcode_surface"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.dzhb.safeqr.view.checkSafeQR.scan.CustomViewfinderView
+        android:id="@+id/zxing_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/flashlight"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="175dp"-->
+    <!--android:background="@drawable/tor" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/zxing_status_view"-->
+    <!--android:background="@color/zxing_transparent"-->
+    <!--android:text="@string/zxing_msg_default_status"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="120dp"-->
+    <!--android:textColor="@color/zxing_status_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+</FrameLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_danger">
+
+    <!--光圈-->
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/glow3" />
+
+    <com.dzhb.safeqr.widget.TopBar
+        android:id="@+id/topBar_afterScan_danger"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:leftBackground="@drawable/left"
+        app:titleTextColor="#ffffff"
+        app:titleTextSize="6sp" />
+
+    <TextView
+        android:id="@+id/afterScan_danger_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qrCodePic2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:text="@string/showDangeActivity_text1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/afterScan_danger_tv1"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:text="@string/showDangeActivity_text2"
+        android:layout_marginBottom="50dp"
+        />
+
+    <!--二维码图片-->
+    <ImageView
+        android:id="@+id/qrCodePic2"
+        android:background="@drawable/qrimage_danger"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp" />
+
+    <!--网格-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/frame" />
+
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/x" />
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/qrCodePic2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/danger_btn_reject"
+            android:text="拒绝访问"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_red" />
+
+        <TextView
+            android:id="@+id/danger_tv2"
+            android:textSize="10dp"
+            android:textColor="#C5C5C5"
+            android:text="继续访问（不推荐）"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <com.dzhb.safeqr.widget.ImgBtn_horizontal
+            android:id="@+id/make_safeQR"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            app:image="@drawable/safe"
+            app:text="@string/makeQRButton"
+            app:textColor="@color/imageBtnH_textColor"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/glow" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/round_rectangle2_normal" />
+
+        <ImageView
+            android:id="@+id/iv_qricon"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/qricon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18" />
+
+            <TextView
+                android:id="@+id/home_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_weight="3"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/home_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="@string/homeActivity_introduce1"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="@string/homeActivity_introduce2"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="@string/homeActivity_introduce3"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/home_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:text="了解更多"
+                android:textColor="#D4D4D4"
+                android:textSize="12dp" />
+
+
+                <com.dzhb.safeqr.widget.ImgBtn_horizontal
+                    android:id="@+id/home_myImgBtn_makeSafeQR"
+                    android:layout_width="240dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:image="@drawable/lock"
+                    app:text="@string/homeActivity_makeQRButton"
+                    app:textColor="@color/imageBtnH_textColor" />
+
+                <com.dzhb.safeqr.widget.ImgBtn_horizontal
+                    android:id="@+id/home_myImgBtn_checkSafeQR"
+                    android:layout_width="240dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:image="@drawable/safe"
+                    app:text="@string/homeActivity_checkQRButton"
+                    app:textColor="@color/imageBtnH_textColor" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_register_textView"
+                    android:textColor="@color/textColor_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注册" />
+
+                <TextView
+                    android:textColor="@color/textColor_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="|" />
+
+                <TextView
+                    android:id="@+id/home_login_textView"
+                    android:textColor="@color/textColor_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!---->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="bottom"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="注册" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="|" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="登录" />-->
+        <!---->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>
+
